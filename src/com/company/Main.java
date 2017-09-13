@@ -6,26 +6,18 @@ public class Main {
     static Scanner userInput = new Scanner(System.in);
 
     public static void main(String[] args) {
-	// write your code here
-        System.out.println("Hello World");
 
-        int x = 5;
-        int y = 10;
+        String ContYorN = "Y";
 
-        System.out.println("Your favourite number: ");
+        int h = 1;
 
-        if(userInput.hasNextInt())
+        while(ContYorN.equalsIgnoreCase("y"))
         {
-            int numberEntered = userInput.nextInt();
-
-            System.out.println("You entered: " + numberEntered);
+            System.out.println(h);
+            System.out.println("Continue y or n?");
+            ContYorN = userInput.nextLine();
+            h++;
         }
-        else
-        {
-            System.out.println("Enter Integer next time man!");
-        }
-
-
-    }
+;    }
 
 }
